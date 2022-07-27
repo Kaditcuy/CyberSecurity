@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-* Changes the mac address of wlan0(i.e a network interface) yo 00:11:22:33:44:66
+* Changes the mac address of eth0(i.e a network interface) yo 00:11:22:33:44:66
 """
 import subprocess;
 
