@@ -5,6 +5,9 @@
 """
 import subprocess;
 
-subprocess.call("ifconfig eth0 down", shell=True);
-subprocess.call("ifconfig eth0 hw ether 00:11:22:33:44:66", shell=True);
-subprocess.call("ifconfig eth0 up", shell=True);
+network_interface = " eth0 ";
+new_mac = " 00:66:33:11:22:44 ";
+        
+subprocess.call("ifconfig" + network_interface + "down", shell=True);
+subprocess.call("ifconfig" + network_interface + "hw ether" + new_mac , shell=True);
+subprocess.call("ifconfig" + network_interface + "up", shell=True);
